@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Accent Lab</title>
+<meta name="description" content="Train a clear American English accent: every sound you say is scored on your device, with lessons, drills, intonation and an AI conversation coach.">
+<meta name="theme-color" content="#2A45CF">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Accent Lab">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#today"><b>Accent Lab</b><span class="tr" aria-hidden="true">/ˈæksɛnt læb/</span></a>
+    <button id="engineChip" class="chip" type="button" data-s="warn"><span class="led"></span>Scoring words only</button>
+    <button id="openSettings" class="iconbtn" type="button" aria-label="Settings"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M18 7h2M4 17h4M13 17h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="15.5" cy="7" r="2.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="10.5" cy="17" r="2.3" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>
+  </header>
+  <div id="banner" class="note" role="note" hidden><div><strong>The microphone is blocked on this page.</strong>Open Accent Lab from its own link to record, or upload recordings.</div></div>
+  <nav id="nav" class="nav" aria-label="Sections"></nav>
+  <main id="main"><p class="muted">Loading Accent Lab…</p></main>
+</div>
+<dialog id="settings" aria-labelledby="settingsTitle">
+  <div class="dlg">
+    <div class="row between"><h2 id="settingsTitle">Settings</h2><button id="settingsClose" class="iconbtn sm" type="button" aria-label="Close settings"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></button></div>
+    <div id="settingsBody" class="stack"></div>
+  </div>
+</dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:16px">Accent Lab needs JavaScript.</p></noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
